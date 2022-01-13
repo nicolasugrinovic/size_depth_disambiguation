@@ -9,7 +9,7 @@ Comming soon!
 
 ```
 git clone https://github.com/nicolasugrinovic/size_depth_disambiguation.git
-cd D-NeRF
+cd size_depth_disambiguation
 conda create -n sizedepth python=3.6
 conda activate sizedepth
 pip install -r requirements.txt
