@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## Citation
 If you use this code or ideas from the paper for your research, please cite our paper:
 ```
-@article{ugrinovic2021depthsize,
+@article{ugrinovic2021sizedepth,
     Author = {Ugrinovic, Nicolas and Ruiz, Adria and Agudo, Antonio and Sanfeliu, Alberto and Moreno-Noguer, Francesc},
     Title = {Body Size and Depth Disambiguation in Multi-Person Reconstruction from Single Images},
     Year = {2021},
