@@ -25,6 +25,10 @@ dist/
 external/
 ckpts/
 output/
+results/
+input/
+precomputed_data/
+weights/
 
 
 # JetBrains IDE
