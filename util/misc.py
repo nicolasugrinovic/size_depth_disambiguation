@@ -137,6 +137,14 @@ def read_pickle_compatible(f):
         p = u.load()
     return p
 
+
+def read_list(list_path):
+    with open(list_path, 'r') as f:
+        instances = f.read().split('\n')
+        img_names = instances[:-1]
+    return img_names
+
+
 def write_pickle(f, data):
     with open(f, 'wb') as f:
         pickle.dump(data, f)
