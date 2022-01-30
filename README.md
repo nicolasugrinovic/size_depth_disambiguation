@@ -3,8 +3,8 @@
 ### [[Project]](http://www.iri.upc.edu/people/nugrinovic/depthsize/index.html)[ [Paper]](http://www.iri.upc.edu/people/nugrinovic/depthsize/paper.pdf) 
 
 ## Code
-- Demo
-- Eval
+1. Demo
+2. Evaluation
 
 ## Requirements
 - Python (tested on 3.8)
@@ -42,6 +42,44 @@ wget https://github.com/intel-isl/DPT/releases/download/1_0/dpt_large-midas-2f21
 
 
 ## Demo
+To run the demo, you first need to generate (or precompute) data which is then used by the optimization method.
+
+To precompute the data run the following command:
+```
+python precompute_estimation_data.py --input_path=./input/coco_demo --output_path=./precomputed_data/coco_demo/ --mode=smpl_reproj --dataset=demo --model_type=dpt_large --config-file ./external/panoptic_deeplab/tools_d2/configs/COCO-PanopticSegmentation/panoptic_deeplab_H_48_os16_mg124_poly_200k_bs64_crop_640_640_coco_dsconv.yaml --opts MODEL.WEIGHTS ./external/panoptic_deeplab/tools_d2/checkpoints/panoptic_deeplab_H_48_os16_mg124_poly_200k_bs64_crop_640_640_coco_dsconv.pth
+```
+Change `input_path` accordingly to where you have the initial input data. 
+This can have any location as long as it has the following structure:
+
+```
+input
+|-- data_name
+    `-- img_name1.jpg
+    `-- img_name1_TRANS_person0.obj
+    .
+    .
+    .
+    `-- img_name1_TRANS_personN.obj
+    `-- img_name1_3djoints_0.json
+    .
+    .
+    .
+    
+    `-- img_name1_3djoints_N.json
+    `-- img_name2.jpg
+    .
+    .
+    .
+```
+This will generate the data inside `./precomputed_data/coco_demo/` folder.
+
+Finally, to run the optimization from our method execute 
+the following command:
+
+```
+python run_optim_demo.py --model_type=dpt_large --input_path=./input/coco_demo --output_path=./output/coco_demo --input=input/coco_demo/*.jpg --mode=smpl_reproj --plane_scale=1.0 --n_iters=2000 --w_ordinal_loss=0 --w_reg_size=0.0 --config-file ./external/panoptic_deeplab/tools_d2/configs/COCO-PanopticSegmentation/panoptic_deeplab_H_48_os16_mg124_poly_200k_bs64_crop_640_640_coco_dsconv.yaml --opts MODEL.WEIGHTS ./external/panoptic_deeplab/tools_d2/checkpoints/panoptic_deeplab_H_48_os16_mg124_poly_200k_bs64_crop_640_640_coco_dsconv.pth
+```
+
 
 ## Test/Eval
 

@@ -185,5 +185,7 @@ def main():
     elif dataset=='mupots':
         pass
 
+    print('Done precomputing data')
+
 if __name__ == "__main__":
     main()

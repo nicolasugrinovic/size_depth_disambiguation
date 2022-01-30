@@ -250,7 +250,7 @@ def read_all_joints(folder='./input/annots/', names=['test_3djoints_0.json']):
         trans = np.array(trans)
 
         j3d_translated = j3d + trans
-        save_points(j3d, 'j3d_person_%d.ply' % i)
+        # save_points(j3d, 'j3d_person_%d.ply' % i)
 
         j3d_all.append(j3d)
         j3d_translated_all.append(j3d_translated)
