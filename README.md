@@ -41,7 +41,12 @@ Install [pytorch3d](https://github.com/facebookresearch/pytorch3d/blob/main/INST
 any other library to load the meshes, just be aware of the 
 vertex order at reading. 
 ## Demo
-To run the demo, you first need to generate (or precompute) data which is then used by the optimization method.
+To run the demo, you first need to generate 
+(or precompute) data which is then used by the 
+optimization method. You need to generate initial pose/shape 
+estimations and give them the correct format. 
+Alternatevily, you can download and use 
+[this data](https://drive.google.com/file/d/1rwWMkVtdOcxABOL5G96EA7tv-gkECqdB/view?usp=sharing).
 
 To precompute the data run the following command:
 ```
