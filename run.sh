@@ -1,5 +1,4 @@
-python precompute_estimation_data.py
-
+CMD="python precompute_estimation_data.py
 --input_path=./input/coco_demo
 --output_path=./precomputed_data/coco_demo/
 --input=input/coco_demo/*.jpg
@@ -11,7 +10,7 @@ python precompute_estimation_data.py
 --opts
 MODEL.WEIGHTS
 ./external/panoptic_deeplab/tools_d2/checkpoints/panoptic_deeplab_H_48_os16_mg124_poly_200k_bs64_crop_640_640_coco_dsconv.pth
-
+"
 
 echo CUDA_VISIBLE_DEVICES=$CUDA_PREPEND $CMD
 CUDA_VISIBLE_DEVICES=$CUDA_PREPEND $CMD

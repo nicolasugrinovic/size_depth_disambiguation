@@ -94,3 +94,12 @@ If you use this code or ideas from the paper for your research, please cite our 
     booktitle = {3DV},
 }
 ```
+generate results or donwload from...
+generate:
+-results_baseline
+-results_ours
+-results_frankmocap
+-initials_crmh
+-initials_frankmocap
+
+eval 
