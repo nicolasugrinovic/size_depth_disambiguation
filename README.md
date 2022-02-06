@@ -78,10 +78,11 @@ the following command:
 ```
 python run_optim_demo.py --model_type=dpt_large --input_path=./input/coco_demo --output_path=./output/coco_demo --input=input/coco_demo/*.jpg --mode=smpl_reproj --plane_scale=1.0 --n_iters=2000 --w_ordinal_loss=0 --w_reg_size=0.0 --config-file ./external/panoptic_deeplab/tools_d2/configs/COCO-PanopticSegmentation/panoptic_deeplab_H_48_os16_mg124_poly_200k_bs64_crop_640_640_coco_dsconv.yaml --opts MODEL.WEIGHTS ./external/panoptic_deeplab/tools_d2/checkpoints/panoptic_deeplab_H_48_os16_mg124_poly_200k_bs64_crop_640_640_coco_dsconv.pth
 ```
-
+Alternatively, you can run the scripts `precompute_data.sh` and
+`run_demo.sh` found in the `scripts` folder
 
 ## Test/Eval
-
+Run `eval.py`
 
 ## Citation
 If you use this code or ideas from the paper for your research, please cite our paper:
