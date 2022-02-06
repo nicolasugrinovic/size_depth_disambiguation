@@ -2,10 +2,6 @@
 
 ### [[Project]](http://www.iri.upc.edu/people/nugrinovic/depthsize/index.html)[ [Paper]](http://www.iri.upc.edu/people/nugrinovic/depthsize/paper.pdf) 
 
-## Code
-1. Demo
-2. Evaluation
-
 ## Requirements
 - Python (tested on 3.8)
 - Pytorch (tested on 1.7)
@@ -39,8 +35,11 @@ weights to be donwloaded are *dpt_large-midas-2f21e586.pt*
 mkdir ./weights
 wget https://github.com/intel-isl/DPT/releases/download/1_0/dpt_large-midas-2f21e586.pt
 ```
-
-
+### Install pytorch3d
+Install [pytorch3d](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md)
+. Though the only function used is `load_obj`. You may use
+any other library to load the meshes, just be aware of the 
+vertex order at reading. 
 ## Demo
 To run the demo, you first need to generate (or precompute) data which is then used by the optimization method.
 
@@ -94,12 +93,20 @@ If you use this code or ideas from the paper for your research, please cite our 
     booktitle = {3DV},
 }
 ```
-generate results or donwload from...
-generate:
--results_baseline
--results_ours
--results_frankmocap
--initials_crmh
--initials_frankmocap
 
-eval 
+
+[comment]: <> (generate results or donwload from...)
+
+[comment]: <> (generate:)
+
+[comment]: <> (-results_baseline)
+
+[comment]: <> (-results_ours)
+
+[comment]: <> (-results_frankmocap)
+
+[comment]: <> (-initials_crmh)
+
+[comment]: <> (-initials_frankmocap)
+
+[comment]: <> (eval )

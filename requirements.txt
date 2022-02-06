@@ -1,0 +1,6 @@
+torch>=1.7
+pytorch3d
+trimesh
+open3d
+scipy
+pyransac3d
