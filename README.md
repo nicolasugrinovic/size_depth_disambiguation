@@ -92,11 +92,13 @@ Run `eval.py`
 ## Citation
 If you use this code or ideas from the paper for your research, please cite our paper:
 ```
-@article{ugrinovic2021sizedepth,
-    Author = {Ugrinovic, Nicolas and Ruiz, Adria and Agudo, Antonio and Sanfeliu, Alberto and Moreno-Noguer, Francesc},
-    Title = {Body Size and Depth Disambiguation in Multi-Person Reconstruction from Single Images},
-    Year = {2021},
-    booktitle = {3DV},
+@inproceedings{ugrinovic2021body,
+  title={Body Size and Depth Disambiguation in Multi-Person Reconstruction from Single Images},
+  author={Ugrinovic, Nicolas and Ruiz, Adria and Agudo, Antonio and Sanfeliu, Alberto and Moreno-Noguer, Francesc},
+  booktitle={2021 International Conference on 3D Vision (3DV)},
+  pages={53--63},
+  year={2021},
+  organization={IEEE}
 }
 ```
 
